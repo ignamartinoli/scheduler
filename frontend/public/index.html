@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timetabler — valid class schedules</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Spline+Sans:wght@400;600&family=Spline+Sans+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- htmx >= 2 required: v1.x groups repeated field names, destroying the
+       document order the /schedules/fragment DCG parser relies on. -->
+  <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+  <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Timetabler</h1>
+  <p>One section per subject, zero overlaps. Prolog does the rest.</p>
+</header>
+
+<main>
+  <form hx-post="/api/schedules/fragment"
+        hx-target="#results"
+        hx-swap="innerHTML"
+        hx-indicator="#working">
+
+    <div id="subjects"
+         _="init put #tpl-subject.content.cloneNode(true) at the end of me"></div>
+
+    <div class="actions">
+      <button type="button" class="ghost"
+              _="on click put #tpl-subject.content.cloneNode(true) at the end of #subjects">
+        + Add subject
+      </button>
+      <button type="submit" class="primary">Generate schedules</button>
+      <span id="working" class="working">solving…</span>
+    </div>
+  </form>
+
+  <section id="results" aria-live="polite"></section>
+</main>
+
+<!-- ============ templates ============ -->
+
+<template id="tpl-slot">
+  <div class="slot-row">
+    <select name="day">
+      <option value="mon" selected>Mon</option>
+      <option value="tue">Tue</option>
+      <option value="wed">Wed</option>
+      <option value="thu">Thu</option>
+      <option value="fri">Fri</option>
+      <option value="sat">Sat</option>
+      <option value="sun">Sun</option>
+    </select>
+    <input type="time" name="start" value="08:00" required>
+    <span class="arrow">→</span>
+    <input type="time" name="end" value="10:00" required>
+    <button type="button" class="x" title="Remove slot"
+            _="on click remove closest <div.slot-row/>">×</button>
+  </div>
+</template>
+
+<template id="tpl-section">
+  <div class="section">
+    <div class="section-head">
+      <input type="text" name="id" placeholder="Section id (e.g. A)" required>
+      <button type="button" class="x" title="Remove section"
+              _="on click remove closest <div.section/>">×</button>
+    </div>
+    <div class="slots">
+      <div class="slot-row">
+        <select name="day">
+          <option value="mon" selected>Mon</option>
+          <option value="tue">Tue</option>
+          <option value="wed">Wed</option>
+          <option value="thu">Thu</option>
+          <option value="fri">Fri</option>
+          <option value="sat">Sat</option>
+          <option value="sun">Sun</option>
+        </select>
+        <input type="time" name="start" value="08:00" required>
+        <span class="arrow">→</span>
+        <input type="time" name="end" value="10:00" required>
+        <button type="button" class="x" title="Remove slot"
+                _="on click remove closest <div.slot-row/>">×</button>
+      </div>
+    </div>
+    <button type="button" class="ghost small"
+            _="on click put #tpl-slot.content.cloneNode(true)
+               at the end of the first <div.slots/> in the closest <div.section/>">
+      + slot
+    </button>
+  </div>
+</template>
+
+<template id="tpl-subject">
+  <fieldset class="subject">
+    <div class="subject-head">
+      <input type="text" name="name" placeholder="Subject name (e.g. algebra)" required>
+      <button type="button" class="x" title="Remove subject"
+              _="on click remove closest <fieldset.subject/>">×</button>
+    </div>
+    <div class="sections">
+      <div class="section">
+        <div class="section-head">
+          <input type="text" name="id" placeholder="Section id (e.g. A)" required>
+          <button type="button" class="x" title="Remove section"
+                  _="on click remove closest <div.section/>">×</button>
+        </div>
+        <div class="slots">
+          <div class="slot-row">
+            <select name="day">
+              <option value="mon" selected>Mon</option>
+              <option value="tue">Tue</option>
+              <option value="wed">Wed</option>
+              <option value="thu">Thu</option>
+              <option value="fri">Fri</option>
+              <option value="sat">Sat</option>
+              <option value="sun">Sun</option>
+            </select>
+            <input type="time" name="start" value="08:00" required>
+            <span class="arrow">→</span>
+            <input type="time" name="end" value="10:00" required>
+            <button type="button" class="x" title="Remove slot"
+                    _="on click remove closest <div.slot-row/>">×</button>
+          </div>
+        </div>
+        <button type="button" class="ghost small"
+                _="on click put #tpl-slot.content.cloneNode(true)
+                   at the end of the first <div.slots/> in the closest <div.section/>">
+          + slot
+        </button>
+      </div>
+    </div>
+    <button type="button" class="ghost small"
+            _="on click put #tpl-section.content.cloneNode(true)
+               at the end of the first <div.sections/> in the closest <fieldset.subject/>">
+      + section
+    </button>
+  </fieldset>
+</template>
+
+</body>
+</html>
