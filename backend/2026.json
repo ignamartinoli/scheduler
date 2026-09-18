@@ -1,0 +1,7649 @@
+{
+  "subjects": [
+    {
+      "name": "Administración de Sistemas de Información",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Algoritmos y Estructuras de Datos",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K8",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K11",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K15",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K16",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Análisis Matemático I",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Análisis Matemático II",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "14:00",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "14:00",
+              "end": "16:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Análisis Numérico",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Análisis de Sistemas de Información",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K11",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arquitectura de Computadoras",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K8",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K11",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arquitectura de Software",
+      "sections": [
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Auditoría SI-TI",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backend de Aplicaciones",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Base de Datos",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ciencia de Datos",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comunicación Multimedial en el Desarrollo de SI",
+      "sections": [
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Comunicación de Datos",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Consultoría en Negocios Digitales",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Creatividad e Innovación en Ingeniería",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Decisiones en Escenarios Complejos",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desarrollo con Tecnologías Blockchain",
+      "sections": [
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desarrollo de Aplicaciones con Objetos",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desarrollo de Software",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K1A",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "21:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desarrollo y Operaciones DevOps",
+      "sections": [
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diseño de Sistemas de Información",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Economía",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "17:20",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "21:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "17:20",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "14:00",
+              "end": "16:25",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emprendimientos Tecnológicos",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Física I",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "09:40",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Física II",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gerenciamiento Estratégico",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestión Gerencial",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestión Industrial de la Producción",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gestión de la Mejora de Procesos",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Green Software",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ingeniería de Software de Fuentes Abiertas-Libres",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "sat",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ingeniería y Calidad de Software",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ingeniería y Sociedad",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "21:35",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inglés I",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "17:20",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "17:20",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inglés II",
+      "sections": [
+        {
+          "id": "3K1",
+          "slots": [
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K2",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K5",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "3K7",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Integración de Aplicaciones en Entorno Web",
+      "sections": [
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inteligencia Artificial",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Investigación Operativa",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legislación",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lógica y Estructuras Discretas",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K8",
+          "slots": [
+            {
+              "day": "sat",
+              "start": "08:45",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K11",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:00",
+              "end": "16:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "14:00",
+              "end": "16:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paradigmas de Programación",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "08:45",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K11",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Probabilidad y Estadística",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "14:00",
+              "end": "16:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K11",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proyecto Final",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "12:50",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "13:15",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "13:15",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Redes de Datos",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "14:55",
+              "end": "16:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seguridad en el Desarrollo de Software",
+      "sections": [
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Seguridad en los Sistemas de Información",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Simulación",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "22:20",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sintaxis y Semántica de los Lenguajes",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "16:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "14:55",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "17:20",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "17:20",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K11",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "11:10",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sistemas Operativos",
+      "sections": [
+        {
+          "id": "2K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K4",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "09:40",
+              "end": "11:10",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K6",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K8",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K10",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "17:20",
+              "end": "19:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "2K11",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sistemas de Gestión",
+      "sections": [
+        {
+          "id": "5K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K2",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "5K4",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "19:55",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sistemas y Procesos de Negocio",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K8",
+          "slots": [
+            {
+              "day": "sat",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K11",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "16:00",
+              "end": "18:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:00",
+              "end": "18:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            }
+          ]
+        },
+        {
+          "id": "1K15",
+          "slots": [
+            {
+              "day": "sat",
+              "start": "09:00",
+              "end": "13:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tecnologías para la Automatización",
+      "sections": [
+        {
+          "id": "4K1",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K2",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "15:40",
+              "end": "18:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K3",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "4K4",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Testing de Software",
+      "sections": [
+        {
+          "id": "5K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "18:15",
+              "end": "20:40",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Álgebra y Geometría Analítica",
+      "sections": [
+        {
+          "id": "1K1",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K2",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "09:30",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K3",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "tue",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K4",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K5",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K6",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K7",
+          "slots": [
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "08:00",
+              "end": "10:25",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K9",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "14:00",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "12:05",
+              "end": "14:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K10",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "13:15",
+              "end": "15:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "16:35",
+              "end": "18:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K12",
+          "slots": [
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 1
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "19:00",
+              "end": "20:40",
+              "term": 2
+            },
+            {
+              "day": "fri",
+              "start": "20:40",
+              "end": "23:05",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K13",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "19:55",
+              "end": "21:25",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "17:20",
+              "end": "19:45",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K14",
+          "slots": [
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 1
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "mon",
+              "start": "10:25",
+              "end": "12:50",
+              "term": 2
+            },
+            {
+              "day": "wed",
+              "start": "12:05",
+              "end": "14:00",
+              "term": 2
+            }
+          ]
+        },
+        {
+          "id": "1K17",
+          "slots": [
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 1
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 1
+            },
+            {
+              "day": "tue",
+              "start": "11:20",
+              "end": "14:00",
+              "term": 2
+            },
+            {
+              "day": "thu",
+              "start": "10:25",
+              "end": "12:05",
+              "term": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,26 +1,42 @@
 # Prolog Class-Schedule Generator
 
-Generates every valid combination of class sections for a set of subjects and exposes them over HTTP as JSON. Built on SWI-Prolog (tested with 9.0.4).
+Generates every valid combination of class sections for a set of subjects and
+serves them as a weekly timetable over HTTP. Built on SWI-Prolog (`swipl:stable`, 10.0.2).
 
 ## Files
 
 | File | Purpose |
 |------|---------|
 | `scheduler.pl` | Pure logic: representation, conflict detection, combination generation |
-| `server.pl` | HTTP endpoint, JSON parsing/encoding, error handling |
+| `server.pl` | HTTP server: serves the frontend, renders every HTML fragment, parses form input |
 | `tests.pl` | plunit test suite (11 tests) |
-| `example.json` | Sample request body |
+| `2026.json` | The subject catalogue offered by "Load subjects" |
 
 ## Running
 
 ```bash
-swipl -g "use_module(server), start(8080), thread_get_message(_)"
+docker compose up
+# open http://localhost:8000
 ```
+
+One container, no Dockerfile. `swipl` serves both the frontend and the endpoints,
+so there is no reverse proxy, no second image and no `/api` prefix. The image is
+pinned to `stable` rather than `latest`, which tracks SWI's odd-minor development
+series. The repo is bind-mounted
+read-only at `/app` with the working directory `/app/backend`, which is also how
+it runs without Docker:
+
+```bash
+cd backend
+swipl -g "start(8080), thread_get_message(_)" server.pl
+```
+
+Restart the container to pick up a `.pl` edit; frontend edits are live on refresh.
 
 Tests:
 
 ```bash
-swipl -g "load_files(tests), run_tests" -t halt
+cd backend && swipl -g "load_files(tests), run_tests" -t halt
 ```
 
 ## Prolog representation
@@ -66,90 +82,22 @@ choose([subject(Name, Sections)|Rest], Acc, Schedule) :-
 
 `member/2` is the nondeterministic choice point; Prolog's backtracking enumerates the full search tree, and `compatible/2` prunes any branch as soon as a chosen section clashes with one already accumulated — invalid subtrees are never explored. Each solution of `valid_schedules/2` is one valid combination; the HTTP layer collects them all with `findall/3`. Duplicate subject names in the input are collapsed to their first occurrence, so a subject can never be selected twice.
 
-## HTTP API
+## HTTP interface
 
-### `POST /schedules`
+Every response is an HTML fragment; there is no JSON API. The browser runs no
+custom JavaScript — only htmx and hyperscript.
 
-Request (`Content-Type: application/json`):
+| Endpoint | Returns |
+|----------|---------|
+| `GET /` | the frontend, from `../frontend/public` |
+| `GET /subjects/fragment` | the catalogue as `<li>` checkboxes |
+| `POST /subjects/form` | `subject=Name&...` → form fieldsets for those subjects (`204` if none ticked) |
+| `GET /blank/subject`, `/blank/section`, `/blank/slot` | one empty row, for the `+` buttons |
+| `POST /schedules/fragment` | the form → one timetable per valid combination |
 
-```json
-{
-  "subjects": [
-    {
-      "name": "algebra",
-      "sections": [
-        { "id": "A",
-          "slots": [ { "day": "mon", "start": "08:00", "end": "10:00" },
-                     { "day": "wed", "start": "08:00", "end": "10:00" } ] },
-        { "id": "B",
-          "slots": [ { "day": "tue", "start": "14:00", "end": "16:00" } ] }
-      ]
-    },
-    {
-      "name": "programming",
-      "sections": [
-        { "id": "P1", "slots": [ { "day": "mon", "start": "09:00", "end": "11:00" } ] },
-        { "id": "P2", "slots": [ { "day": "thu", "start": "09:00", "end": "11:00" } ] }
-      ]
-    }
-  ]
-}
-```
-
-- `day`: one of `mon tue wed thu fri sat sun`
-- `start`/`end`: `"HH:MM"`, 24-hour, `start < end`
-
-Response `200` (actual output for the request above — `algebra A + programming P1` is excluded because both meet Monday 08:00–10:00 / 09:00–11:00):
-
-```json
-{
-  "count": 3,
-  "schedules": [
-    [ { "subject": "algebra", "section": "A",
-        "slots": [ { "day": "mon", "start": "08:00", "end": "10:00" },
-                   { "day": "wed", "start": "08:00", "end": "10:00" } ] },
-      { "subject": "programming", "section": "P2",
-        "slots": [ { "day": "thu", "start": "09:00", "end": "11:00" } ] } ],
-    [ { "subject": "algebra", "section": "B",
-        "slots": [ { "day": "tue", "start": "14:00", "end": "16:00" } ] },
-      { "subject": "programming", "section": "P1",
-        "slots": [ { "day": "mon", "start": "09:00", "end": "11:00" } ] } ],
-    [ { "subject": "algebra", "section": "B",
-        "slots": [ { "day": "tue", "start": "14:00", "end": "16:00" } ] },
-      { "subject": "programming", "section": "P2",
-        "slots": [ { "day": "thu", "start": "09:00", "end": "11:00" } ] } ]
-  ]
-}
-```
-
-When no combination exists, the response is `200` with `{"count": 0, "schedules": []}` — an unsatisfiable timetable is a valid answer, not an error.
-
-### Errors — `400` with `{"error": "..."}`
-
-Verified responses:
-
-| Input | Response |
-|-------|----------|
-| `"day": "monday"` | `{"error":"unknown weekday: monday"}` |
-| `"start": "8am"` | `{"error":"bad time (expected HH:MM): 8am"}` |
-| `"start":"10:00","end":"08:00"` | `{"error":"start must precede end (got 10:00 >= 08:00)"}` |
-| `{not json` | `{"error":"invalid request: ... Syntax error: json(illegal_json)"}` |
-| `{"foo": 1}` | `{"error":"body must be {\"subjects\": [...]}"}` |
-| empty `sections` / `slots` | `{"error":"subject has no sections"}` etc. |
-
-### Example requests
-
-```bash
-curl -X POST http://localhost:8080/schedules \
-     -H 'Content-Type: application/json' -d @example.json
-
-# No valid combination -> {"count":0,"schedules":[]}
-curl -X POST http://localhost:8080/schedules \
-     -H 'Content-Type: application/json' \
-     -d '{"subjects":[
-           {"name":"a","sections":[{"id":"A1","slots":[{"day":"mon","start":"08:00","end":"10:00"}]}]},
-           {"name":"b","sections":[{"id":"B1","slots":[{"day":"mon","start":"09:00","end":"11:00"}]}]}]}'
-```
+Form input is validated in `slot_form//1` and `time_minutes/2`; a bad weekday,
+a malformed time or `start >= end` comes back as a styled `<div class="error">`
+fragment rather than an HTTP error, because it is swapped into the page as-is.
 
 ## Test coverage (`tests.pl`)
 
@@ -157,64 +105,63 @@ curl -X POST http://localhost:8080/schedules \
 - **Overlapping schedules**: conflicting section pairs are pruned from results
 - **Multi-day sections**: a section is rejected as a whole if any one of its slots conflicts
 - **Duplicate subjects**: repeated subject entries yield the subject exactly once
-- **No valid combination**: `valid_schedules/2` fails (HTTP returns `count: 0`)
+- **No valid combination**: `valid_schedules/2` fails (the page shows the empty-state card)
 - **Self-overlapping section** is never selected
 - **Exhaustiveness**: 2×2 conflict-free input yields all 4 combinations; empty input yields the empty schedule
 
 ---
 
-# Frontend (HTMX + Hyperscript) and Docker Compose
+# Frontend (HTMX + Hyperscript)
 
 ## Project layout
 
 ```
-horarios/
+scheduler/
 ├── compose.yaml
 ├── backend/
-│   ├── scheduler.pl        # unchanged pure logic
-│   ├── server.pl           # + POST /schedules/fragment (HTML endpoint)
+│   ├── scheduler.pl        # pure logic
+│   ├── server.pl           # HTTP server: static files + every fragment
 │   ├── tests.pl
-│   └── example.json
+│   └── 2026.json           # subject catalogue
 └── frontend/
-    ├── nginx.conf          # static files + /api/ reverse proxy
     └── public/
-        ├── index.html      # HTMX + Hyperscript, no custom JS
+        ├── index.html      # ~90 lines: structure and htmx/hyperscript wiring
         └── style.css
 ```
 
-## Running
+## One representation, one place for markup
 
-```bash
-docker compose up
-# open http://localhost:8000
-```
+`server.pl` speaks the same terms as `scheduler.pl` — `subject(Name, Sections)`,
+`section(Id, Slots)`, `slot(Day, Start, End)` with times as minutes since
+midnight. JSON and `"HH:MM"` exist only at the edges (`catalogue/1` and the two
+time predicates), so the catalogue, the blank rows and the filled rows all
+render through the same DCGs.
 
-No Dockerfiles: both services run stock images (`swipl:9.2`, `nginx:1.27-alpine`)
-with bind mounts. The backend mounts `./backend` read-only at `/app` and
-overrides the command; the frontend mounts `nginx.conf` and `public/` into the
-stock nginx paths. Edit a `.pl` file and restart the backend container to
-reload; frontend edits are live on refresh. Note the swipl image's entrypoint
-is `swipl` itself, which is why `compose.yaml` states `entrypoint` explicitly
-and passes only arguments in `command`.
+That is why the page has no `<template>` elements: the `+ Add subject`,
+`+ section` and `+ slot` buttons fetch their markup from `/blank/*` instead of
+cloning a client-side copy that would have to be kept in step with the Prolog.
+Hyperscript keeps the work that needs no server — the `×` buttons and the
+subject picker's expand/collapse.
 
-nginx serves the page and proxies `/api/` to `backend:8080`, so the browser
-talks to a single origin — no CORS. The backend port is not published on the
-host; the JSON API remains reachable at `http://localhost:8000/api/schedules`.
+**Two htmx attributes are inherited — `hx-target` and `hx-swap`.** Every element
+inside a form that sets them must state its own, or its request silently swaps
+into the form's target. This is load-bearing: the picker's `<ul>` and each `+`
+button sit inside forms that target `#subjects` and `#results`.
 
 ## How the frontend works
 
-There is **zero custom JavaScript**. The page is a plain HTML form:
-
-- **Hyperscript** handles the dynamic structure — each "+ Add subject",
-  "+ section", "+ slot" button clones a `<template>` (`on click put
-  #tpl-slot.content.cloneNode(true) at the end of the first <div.slots/> in
-  the closest <div.section/>`), and each `×` removes its closest block.
-- **HTMX** submits the form (`hx-post="/api/schedules/fragment"`) with native
-  urlencoded serialization and swaps the returned HTML into `#results`.
+- **htmx** fetches all markup and submits both forms, swapping HTML into place.
   **htmx >= 2 is required**: v1.x collects form values into an object keyed by
-  field name and emits repeated names grouped together, destroying the
-  document order the fragment parser depends on; v2.x serializes from
-  `FormData`, which preserves DOM order per spec.
+  field name and emits repeated names grouped together, destroying the document
+  order the fragment parser depends on; v2.x serializes from `FormData`, which
+  preserves DOM order per spec.
+- **Hyperscript** removes rows (`on click remove closest <div.slot-row/>`) and
+  toggles the subject picker. Hyperscript processes htmx-swapped nodes on
+  `htmx:load`, so server-rendered `_` attributes bind exactly like static ones.
+- **The picker animates** with a `grid-template-rows: 0fr → 1fr` transition, so
+  it eases to the content's real height without a `max-height` guess. Its list
+  loads at page load rather than on first click — otherwise the first open
+  animates toward an empty box and jumps when the content lands.
 
 ## `POST /schedules/fragment` — hypermedia endpoint
 
@@ -239,20 +186,19 @@ positions (`grid-column` / `grid-row`) are computed by Prolog from the slot
 times (30-minute rows, bounds derived per combination). Errors come back as a
 styled `<div class="error">` fragment; "no valid combination" is a distinct
 empty-state card, not an error.
-
 ## Verification performed
 
-- All 11 plunit tests still pass; the JSON endpoint is unchanged.
-- Fragment endpoint exercised over HTTP: 3-combination example, no-valid-combination,
-  bad time order, empty form.
-- The exact `nginx.conf` was run locally (with `backend` → `127.0.0.1`):
-  static page, `style.css`, and both `/api/` routes verified through the proxy.
-- All 11 Hyperscript attributes parsed with the real `_hyperscript` engine in
-  jsdom, and every add/remove interaction simulated with click events —
-  structure counts correct after each step.
-- `FormData` field order from the live DOM confirmed to match the DCG's
-  expected stream: `name,id,day,start,end,id,day,start,end`.
-
-Vue/Nuxt escape hatch: if the form builder ever outgrows this (drag-and-drop,
-client-side validation across fields, persistence), the JSON endpoint is
-already there for a fat client — nothing about the backend would change.
+- All 11 plunit tests pass.
+- Every route exercised over HTTP: page, stylesheet, all three `/blank/*` rows,
+  the catalogue fragment, `/subjects/form` (including the `204` empty case), and
+  `/schedules/fragment`.
+- A missing file returns `404`; path traversal (`../`, percent-encoded, and
+  `../../etc/passwd`) is rejected by SWI's `http_safe_file` with no content
+  leaked — it answers `500` rather than `403`, which is cosmetic.
+- Driven end to end in headless Firefox: page-load blank subject, `+ Add
+  subject`, `+ section` and `+ slot` each targeting the right container,
+  `×` removal, picker open/collapse across repeated and rapid clicks, ticking
+  boxes, `Load selected` (2 subjects, 7 and 13 sections, picker auto-closed),
+  and `Generate schedules` returning 71 combinations.
+- All hyperscript attributes — page and server-rendered — parsed with the real
+  `_hyperscript` engine; a silent no-op is the failure mode otherwise.

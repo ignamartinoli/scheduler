@@ -21,8 +21,13 @@ Times are half-open intervals [Start, End): a class ending 10:00 does NOT
 conflict with one starting 10:00.
 */
 
-weekday(mon). weekday(tue). weekday(wed). weekday(thu).
-weekday(fri). weekday(sat). weekday(sun).
+weekday(mon).
+weekday(tue).
+weekday(wed).
+weekday(thu).
+weekday(fri).
+weekday(sat).
+weekday(sun).
 
 %!  slot_overlap(+A, +B) is semidet.
 %

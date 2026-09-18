@@ -2,114 +2,195 @@
 
 /** <module> HTTP interface for the schedule generator
 
-Endpoint
---------
-  POST /schedules            Content-Type: application/json
+Serves the frontend and the hypermedia endpoints it talks to. Every
+response is an HTML fragment; there is no JSON API and no client-side
+JavaScript.
 
-Request body:
-  { "subjects": [
-      { "name": "algebra",
-        "sections": [
-          { "id": "A",
-            "slots": [ { "day": "mon", "start": "08:00", "end": "10:00" } ] }
-        ] }
-  ] }
+  GET  /                     the frontend (../frontend/public)
+  GET  /subjects/fragment    the catalogue as <li> checkboxes
+  POST /subjects/form        subject=Name&... -> form fieldsets
+  GET  /blank/subject        one empty subject / section / slot, for the
+  GET  /blank/section        "+ Add subject", "+ section" and "+ slot"
+  GET  /blank/slot           buttons
+  POST /schedules/fragment   the form -> one timetable per valid combination
 
-Response 200:
-  { "count": N,
-    "schedules": [
-      [ { "subject": "algebra", "section": "A",
-          "slots": [ { "day": "mon", "start": "08:00", "end": "10:00" } ] } ]
-    ] }
-
-Errors:
-  400 { "error": Message }   malformed JSON, unknown weekday, bad time
-                             string, start >= end, empty sections, etc.
+Markup lives here only: the page carries no <template> copies of it.
+Forms and fragments both speak the representation scheduler.pl uses --
+subject(Name, Sections), section(Id, Slots), slot(Day, Start, End) with
+times as minutes since midnight -- so JSON and "HH:MM" exist only at the
+edges, in catalogue/1 and the two time predicates.
 */
 
 :- use_module(library(http/thread_httpd)).
 :- use_module(library(http/http_dispatch)).
-:- use_module(library(http/http_json)).
+:- use_module(library(http/http_files)).
+:- use_module(library(http/http_client)).
+:- use_module(library(http/html_write)).
+:- use_module(library(http/json)).
 :- use_module(scheduler).
-
-:- http_handler(root(schedules), handle_schedules, [method(post)]).
 
 start(Port) :- http_server(http_dispatch, [port(Port)]).
 stop(Port)  :- http_stop_server(Port, []).
 
-handle_schedules(Request) :-
-    catch(
-        ( http_read_json_dict(Request, In),
-          parse_subjects(In, Subjects),
-          findall(S, valid_schedules(Subjects, S), Schedules),
-          maplist(schedule_json, Schedules, Out),
-          length(Out, N),
-          reply_json_dict(_{count: N, schedules: Out})
-        ),
-        Error,
-        reply_error(Error)).
+%   The frontend is served by this same server: no proxy, no second
+%   container, no /api prefix. Longer paths below take precedence.
+:- http_handler(root(.), serve_static, [prefix]).
 
-reply_error(bad_request(Msg)) :- !,
-    reply_json_dict(_{error: Msg}, [status(400)]).
-reply_error(Error) :-
-    message_to_string(Error, Msg),
-    string_concat("invalid request: ", Msg, Full),
-    reply_json_dict(_{error: Full}, [status(400)]).
+serve_static(Request) :- http_reply_from_files('../frontend/public', [], Request).
+serve_static(Request) :- http_404([], Request).   % the files handler fails, not 404s
 
-%--- request parsing -------------------------------------------------
+:- http_handler(root(schedules/fragment), handle_fragment,    [method(post)]).
+:- http_handler(root(subjects/fragment),  handle_subject_list, [method(get)]).
+:- http_handler(root(subjects/form),      handle_subject_form, [method(post)]).
+:- http_handler(root(blank/subject),      handle_blank(subject), [method(get)]).
+:- http_handler(root(blank/section),      handle_blank(section), [method(get)]).
+:- http_handler(root(blank/slot),         handle_blank(slot),    [method(get)]).
 
-parse_subjects(Dict, Subjects) :-
-    (   is_dict(Dict), get_dict(subjects, Dict, List), is_list(List)
-    ->  maplist(parse_subject, List, Subjects)
-    ;   throw(bad_request("body must be {\"subjects\": [...]}"))
+%!  reply_markup(:Body) is det.
+%
+%   Reply with the HTML that the html//1 DCG Body produces.
+
+reply_markup(Body) :-
+    phrase(Body, Tokens),
+    format('Content-type: text/html; charset=UTF-8~n~n'),
+    print_html(Tokens).
+
+%=====================================================================
+% The catalogue
+%=====================================================================
+
+%!  catalogue(-Subjects) is det.
+%
+%   2026.json as scheduler terms. Re-read per request: it is 165 kB and
+%   a page load asks for it at most twice.
+
+catalogue(Subjects) :-
+    setup_call_cleanup(
+        open('2026.json', read, In, [encoding(utf8)]),
+        json_read_dict(In, Dict),
+        close(In)),
+    maplist(dict_subject, Dict.subjects, Subjects).
+
+dict_subject(D, subject(Name, Sections)) :-
+    atom_string(Name, D.name),
+    maplist(dict_section, D.sections, Sections).
+
+dict_section(D, section(Id, Slots)) :-
+    atom_string(Id, D.id),
+    maplist(dict_slot, D.slots, Slots0),
+    list_to_set(Slots0, Slots).   % the catalogue repeats each slot per term
+
+dict_slot(D, slot(Day, Start, End)) :-
+    atom_string(Day, D.day),
+    time_minutes(D.start, Start),
+    time_minutes(D.end, End).
+
+handle_subject_list(_Request) :-
+    catch(( catalogue(Subjects),
+            findall(Item, ( nth0(I, Subjects, S), checkbox_item(I, S, Item) ), Items),
+            reply_markup(html(Items))
+          ),
+          E,
+          ( message_to_string(E, M), reply_markup(fragment(error(M))) )).
+
+%   --i carries the index so CSS can stagger the reveal animation.
+checkbox_item(I, subject(Name, _), li(style(Style), label([input(Attrs), ' ', Name]))) :-
+    format(atom(Style), '--i: ~w', [I]),
+    Attrs = [type(checkbox), name(subject), value(Name)].
+
+handle_subject_form(Request) :-
+    http_read_data(Request, Pairs, []),
+    findall(Name, member(subject=Name, Pairs), Names),
+    (   Names == []
+    ->  throw(http_reply(no_content))   % nothing ticked: htmx leaves the form alone
+    ;   catalogue(Subjects),
+        include(picked_subject(Names), Subjects, Picked),
+        reply_markup(subject_fieldsets(Picked))
     ).
 
-parse_subject(D, subject(Name, Sections)) :-
-    field(D, name, string, NameS),
-    atom_string(Name, NameS),
-    field(D, sections, list, SecList),
-    (   SecList == []
-    ->  throw(bad_request("subject has no sections"))
-    ;   maplist(parse_section, SecList, Sections)
-    ).
+picked_subject(Names, subject(Name, _)) :- memberchk(Name, Names).
 
-parse_section(D, section(Id, Slots)) :-
-    field(D, id, string, IdS),
-    atom_string(Id, IdS),
-    field(D, slots, list, SlotList),
-    (   SlotList == []
-    ->  throw(bad_request("section has no slots"))
-    ;   maplist(parse_slot, SlotList, Slots)
-    ).
+%=====================================================================
+% Form markup
+%=====================================================================
 
-parse_slot(D, slot(Day, Start, End)) :-
-    field(D, day, string, DayS),
-    atom_string(Day, DayS),
-    (   weekday(Day) -> true
-    ;   format(string(M), "unknown weekday: ~w", [Day]),
-        throw(bad_request(M))
-    ),
-    field(D, start, string, StartS), time_minutes(StartS, Start),
-    field(D, end,   string, EndS),   time_minutes(EndS, End),
-    (   Start < End -> true
-    ;   format(string(M2), "start must precede end (got ~w >= ~w)",
-               [StartS, EndS]),
-        throw(bad_request(M2))
-    ).
+handle_blank(subject, _Request) :- blank_subject(S), reply_markup(subject_fieldsets([S])).
+handle_blank(section, _Request) :- blank_section(S), reply_markup(section_divs([S])).
+handle_blank(slot,    _Request) :- blank_slot(S),    reply_markup(slot_rows([S])).
 
-field(D, Key, Type, Value) :-
-    (   is_dict(D), get_dict(Key, D, Value), of_type(Type, Value)
-    ->  true
-    ;   format(string(M), "missing or invalid field: ~w", [Key]),
-        throw(bad_request(M))
-    ).
+blank_subject(subject('', [Section])) :- blank_section(Section).
+blank_section(section('', [Slot]))    :- blank_slot(Slot).
+blank_slot(slot(mon, 480, 600)).
 
-of_type(string, V) :- string(V).
-of_type(list, V)   :- is_list(V).
+subject_fieldsets([]) --> [].
+subject_fieldsets([subject(Name, Sections)|Ss]) -->
+    html(fieldset(class(subject),
+                  [ div(class('subject-head'),
+                        [ input([type(text), name(name), value(Name),
+                                 placeholder('Subject name (e.g. algebra)'), required(required)]),
+                          \remove_button('Remove subject', 'fieldset.subject')
+                        ]),
+                    div(class(sections), \section_divs(Sections)),
+                    \add_button('/blank/section', 'previous .sections', '+ section')
+                  ])),
+    subject_fieldsets(Ss).
+
+section_divs([]) --> [].
+section_divs([section(Id, Slots)|Ss]) -->
+    html(div(class(section),
+             [ div(class('section-head'),
+                   [ input([type(text), name(id), value(Id),
+                            placeholder('Section id (e.g. A)'), required(required)]),
+                     \remove_button('Remove section', 'div.section')
+                   ]),
+               div(class(slots), \slot_rows(Slots)),
+               \add_button('/blank/slot', 'previous .slots', '+ slot')
+             ])),
+    section_divs(Ss).
+
+slot_rows([]) --> [].
+slot_rows([slot(Day, Start, End)|Ss]) -->
+    { minutes_time(Start, Ss1), minutes_time(End, Es) },
+    html(div(class('slot-row'),
+             [ select(name(day), \day_options(Day)),
+               input([type(time), name(start), value(Ss1), required(required)]),
+               span(class(arrow), '→'),
+               input([type(time), name(end), value(Es), required(required)]),
+               \remove_button('Remove slot', 'div.slot-row')
+             ])),
+    slot_rows(Ss).
+
+%   Removal is pure DOM work, so it stays in hyperscript; adding a row
+%   fetches it from here. hx-target/hx-swap are always explicit: both are
+%   inherited attributes, and these buttons sit inside a form that sets
+%   them for the results pane.
+remove_button(Title, Closest) -->
+    { format(atom(Script), 'on click remove closest <~w/>', [Closest]) },
+    html(button([type(button), class(x), title(Title), '_'(Script)], '×')).
+
+add_button(Path, Target, Label) -->
+    html(button([type(button), class([ghost, small]),
+                 'hx-get'(Path), 'hx-target'(Target), 'hx-swap'(beforeend)],
+                Label)).
+
+day_options(Selected) -->
+    day_options([mon-'Mon', tue-'Tue', wed-'Wed', thu-'Thu',
+                 fri-'Fri', sat-'Sat', sun-'Sun'], Selected).
+
+day_options([], _) --> [].
+day_options([Day-Label|Ds], Selected) -->
+    { Day == Selected -> Attrs = [value(Day), selected(selected)] ; Attrs = [value(Day)] },
+    html(option(Attrs, Label)),
+    day_options(Ds, Selected).
+
+%=====================================================================
+% Times
+%=====================================================================
 
 %!  time_minutes(+String, -Minutes) is det.
+%!  minutes_time(+Minutes, -String) is det.
 %
-%   "HH:MM" -> minutes since midnight, validating ranges.
+%   "HH:MM" <-> minutes since midnight, validating ranges.
 
 time_minutes(S, Minutes) :-
     (   split_string(S, ":", "", [Hs, Ms]),
@@ -121,31 +202,16 @@ time_minutes(S, Minutes) :-
         throw(bad_request(Msg))
     ).
 
-%--- response encoding -----------------------------------------------
-
-schedule_json(Schedule, Json) :-
-    maplist(class_json, Schedule, Json).
-
-class_json(class(Name, section(Id, Slots)), 
-           _{subject: Name, section: Id, slots: SlotsJson}) :-
-    maplist(slot_json, Slots, SlotsJson).
-
-slot_json(slot(Day, S, E), _{day: Day, start: Ss, end: Es}) :-
-    minutes_time(S, Ss),
-    minutes_time(E, Es).
-
 minutes_time(Minutes, String) :-
     H is Minutes // 60,
     M is Minutes mod 60,
     format(string(String), "~`0t~d~2|:~`0t~d~5|", [H, M]).
 
 %=====================================================================
-% HTML fragment endpoint (hypermedia interface for the HTMX frontend)
+% POST /schedules/fragment
 %=====================================================================
 %
-%   POST /schedules/fragment    Content-Type: application/x-www-form-urlencoded
-%
-%   Accepts a plain HTML form. Field order encodes the tree:
+%   Accepts the plain HTML form. Field order encodes the tree:
 %
 %     name=algebra & id=A & day=mon & start=08:00 & end=10:00
 %                  & id=B & day=tue & ...
@@ -153,32 +219,18 @@ minutes_time(Minutes, String) :-
 %
 %   Each `name` opens a subject, each `id` opens a section, each
 %   day/start/end triple is a slot. The flat pair list is parsed by a
-%   DCG. Replies with an HTML fragment: one mini weekly timetable per
-%   valid combination.
-
-:- use_module(library(http/html_write)).
-:- use_module(library(http/http_client)).
-
-:- http_handler(root(schedules/fragment), handle_fragment, [method(post)]).
+%   DCG. Replies with one mini weekly timetable per valid combination.
 
 handle_fragment(Request) :-
     http_read_data(Request, Pairs, []),
     catch(
         ( parse_form(Pairs, Subjects),
           findall(S, valid_schedules(Subjects, S), Schedules),
-          subject_names(Subjects, Names),
-          reply_fragment(results(Names, Schedules))
+          findall(N, member(subject(N, _), Subjects), Names),
+          reply_markup(fragment(results(Names, Schedules)))
         ),
         bad_request(Msg),
-        reply_fragment(error(Msg))).
-
-subject_names(Subjects, Names) :-
-    findall(N, member(subject(N, _), Subjects), Names).
-
-reply_fragment(Spec) :-
-    phrase(fragment(Spec), Tokens),
-    format('Content-type: text/html; charset=UTF-8~n~n'),
-    print_html(Tokens).
+        reply_markup(fragment(error(Msg)))).
 
 %--- form parsing (DCG over the ordered Key=Value list) ---------------
 
@@ -240,7 +292,7 @@ atom_minutes(V, Minutes) :-
     atom_string(V, S),
     time_minutes(S, Minutes).
 
-%--- fragment rendering -----------------------------------------------
+%--- results rendering -------------------------------------------------
 
 fragment(error(Msg)) -->
     html(div(class(error), [span(class('error-mark'), '!'), Msg])).

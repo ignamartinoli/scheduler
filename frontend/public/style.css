@@ -120,6 +120,75 @@ button.x:hover { color: #B3402A; }
 
 .actions { display: flex; align-items: center; gap: 1rem; margin: 1.4rem 0; }
 
+/* ============ subject picker ============
+   Collapsed/expanded with a 0fr -> 1fr grid row: animates to the content's
+   real height, no max-height guess. .picker-clip does the clipping so the
+   box border isn't left as a hairline when closed. */
+
+.picker {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .3s ease;
+}
+.picker.open { grid-template-rows: 1fr; }
+
+.picker-clip { overflow: hidden; min-height: 0; }
+
+.picker-box {
+  border: 1.5px solid var(--ink);
+  background: var(--paper);
+  padding: .9rem;
+  margin-bottom: 1.4rem;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.picker.open .picker-box { opacity: 1; }
+
+.picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .7rem;
+  color: var(--ink-soft);
+  font-family: var(--mono);
+  font-size: .85rem;
+}
+
+ul.picker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 40vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: .2rem .9rem;
+}
+ul.picker-list label {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+  padding: .15rem .2rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+ul.picker-list label:hover { background: #fff; }
+
+.picker-actions { display: flex; align-items: center; gap: .6rem; }
+
+/* Items animate in as htmx swaps them, staggered by the --i the server
+   emits on each <li>; the delay is capped so the tail isn't left waiting. */
+.picker.open ul.picker-list li {
+  animation: rise-in .3s ease both;
+  animation-delay: min(var(--i, 0) * 14ms, 340ms);
+}
+#subjects fieldset.subject { animation: rise-in .3s ease both; }
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(-.35rem); }
+}
+
 .working { display: none; color: var(--ink-soft); font-family: var(--mono); font-size: .85rem; }
 .htmx-request .working, .working.htmx-request { display: inline; }
 
@@ -203,4 +272,6 @@ ul.legend li span {
 
 @media (prefers-reduced-motion: reduce) {
   button.primary { transition: none; }
+  .picker, .picker-box { transition: none; }
+  .picker.open ul.picker-list li, #subjects fieldset.subject { animation: none; }
 }
